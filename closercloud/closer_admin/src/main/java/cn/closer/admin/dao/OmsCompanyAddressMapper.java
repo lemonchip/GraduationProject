@@ -1,0 +1,33 @@
+package cn.closer.admin.dao;
+
+
+import cn.closer.admin.beans.OmsCompanyAddress;
+import cn.closer.admin.beans.OmsCompanyAddressExample;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+@Mapper
+public interface OmsCompanyAddressMapper {
+    long countByExample(OmsCompanyAddressExample example);
+
+    int deleteByExample(OmsCompanyAddressExample example);
+
+    int deleteByPrimaryKey(Long id);
+
+    int insert(OmsCompanyAddress record);
+
+    int insertSelective(OmsCompanyAddress record);
+
+    List<OmsCompanyAddress> selectByExample(OmsCompanyAddressExample example);
+
+    OmsCompanyAddress selectByPrimaryKey(Long id);
+
+    int updateByExampleSelective(@Param("record") OmsCompanyAddress record, @Param("example") OmsCompanyAddressExample example);
+
+    int updateByExample(@Param("record") OmsCompanyAddress record, @Param("example") OmsCompanyAddressExample example);
+
+    int updateByPrimaryKeySelective(OmsCompanyAddress record);
+
+    int updateByPrimaryKey(OmsCompanyAddress record);
+}

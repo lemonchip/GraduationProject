@@ -1,0 +1,29 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: closer-rabbitmq
+  redis:
+    host: 101.37.80.187
+  rabbitmq:
+    host: 101.37.80.187
+    port: 5672
+    username: guest
+    password: HKC.1998
+  mail:
+    default-encoding: UTF-8
+    username: 596552755@qq.com
+    host: smtp.qq.com
+    password: zmlihhtwelupbdag
+    properties:
+      mail:
+        stmp:
+          auth: true
+          ssl:
+            enable: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka/
+  instance:
+    prefer-ip-address: true

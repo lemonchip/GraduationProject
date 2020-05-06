@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="closer_admin" />
+        <module name="closer_common" />
+        <module name="closer_eureka" />
+        <module name="closer_fastDFS" />
+        <module name="closer_mbg" />
+        <module name="closer_oms" />
+        <module name="closer_pms" />
+        <module name="closer_protal" />
+        <module name="closer_rabbitmq" />
+        <module name="closer_space" />
+        <module name="closer_ums" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="closer_blog" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

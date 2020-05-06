@@ -1,0 +1,33 @@
+package cn.closer.admin.dao;
+
+
+import cn.closer.admin.beans.OmsOrderReturnReason;
+import cn.closer.admin.beans.OmsOrderReturnReasonExample;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+@Mapper
+public interface OmsOrderReturnReasonMapper {
+    long countByExample(OmsOrderReturnReasonExample example);
+
+    int deleteByExample(OmsOrderReturnReasonExample example);
+
+    int deleteByPrimaryKey(Long id);
+
+    int insert(OmsOrderReturnReason record);
+
+    int insertSelective(OmsOrderReturnReason record);
+
+    List<OmsOrderReturnReason> selectByExample(OmsOrderReturnReasonExample example);
+
+    OmsOrderReturnReason selectByPrimaryKey(Long id);
+
+    int updateByExampleSelective(@Param("record") OmsOrderReturnReason record, @Param("example") OmsOrderReturnReasonExample example);
+
+    int updateByExample(@Param("record") OmsOrderReturnReason record, @Param("example") OmsOrderReturnReasonExample example);
+
+    int updateByPrimaryKeySelective(OmsOrderReturnReason record);
+
+    int updateByPrimaryKey(OmsOrderReturnReason record);
+}
